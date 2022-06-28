@@ -1,0 +1,191 @@
+body {
+  padding: 10px;
+  font-family: Joan;
+}
+
+body header {
+  margin: 0 auto;
+  max-width: 1440px;
+  min-width: 375px;
+  background-color: #FFDAB9;
+  border: solid 2px grey;
+}
+
+body header > span {
+  font-size: 36px;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+}
+
+body header > span .currency-date {
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #a33131;
+}
+
+body header .currency__table {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body header .currency__table .currency__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+
+body header .currency__table .currency__element span {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: italic;
+  margin: 0 10px;
+  letter-spacing: 2px;
+}
+
+body header .currency__table .currency__element img {
+  width: 40px;
+}
+
+body header .currency__table .currency__element .currency__value {
+  text-align: center;
+}
+
+body header .currency__table .currency__element .currency__value .currency__data {
+  font-style: normal;
+  font-family: "Orbitron";
+  width: 120px;
+  border: 2px solid grey;
+  padding: 10px;
+  color: green;
+}
+
+body header .currency__table .currency__element .currency__value .currency__loading {
+  width: 120px;
+}
+
+body .main {
+  margin: 0 auto;
+  max-width: 1440px;
+  min-width: 375px;
+  background-color: whitesmoke;
+  border: solid 2px grey;
+}
+
+body .main > span {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  margin: 20px 0 10px;
+}
+
+body .main .main__reference {
+  text-transform: none;
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+
+body .main .main__converter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 20px;
+  padding: 20px 40px;
+}
+
+body .main .main__converter .main__widget {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #cdd7e7;
+  border-radius: 5px;
+  padding: 10px 10px 10px 20px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+@media all and (max-width: 846px) {
+  body .main .main__converter .main__widget.main__widget {
+    width: 100%;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+
+body .main .main__converter .main__widget .main__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+body .main .main__converter .main__widget .main__input label,
+body .main .main__converter .main__widget .main__input span {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+body .main .main__converter .main__widget .main__input input {
+  padding-right: 40px;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+  border: 0px;
+  background-color: #fafafa;
+  min-width: 150px;
+  max-width: 180px;
+}
+
+body .main .main__converter .main__widget .main__select {
+  margin: 0 10px 0 20px;
+}
+
+body .main .main__converter .main__widget .main__select select {
+  height: 32px;
+}
+
+body .main .main__converter .main__button img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+body footer {
+  text-align: center;
+  font-weight: 600;
+  font-size: 10px;
+}

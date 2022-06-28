@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" type="text/css" href="./css/normilize.css">
+   <link rel="stylesheet" type="text/css" href="./css/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Joan:regular" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Orbitron:regular,500,600,700,800,900" rel="stylesheet" />
+</head>
+
+<body>
+   <header class="currency">
+      <span>Курс на <span class="currency-date"> #date </span> (НБУ) - UAH</span>
+      <div class="currency__table">
+         <div class="currency__element">
+            <span>USD :</span>
+            <img src="./img/usd.svg" alt="dollar-img">
+            <span class="currency__data data-1">Static</span>
+         </div>
+         <div class="currency__element">
+            <span>EUR :</span>
+            <img src="./img/eur.svg" alt="euro-img">
+            <span class="currency__data data-2">Static</span>
+         </div>
+      </div>
+   </header>
+
+   <div class="main">
+      <span>Конвертер</span>
+      <span class="main__reference">(apilayer.com course)</span>
+      <div class="main__converter">
+         <div class="main__widget">
+            <div class="main__input">
+               <label>Введiть суму</label>
+               <input type="number" value="" data-state="first" class="input--first">
+               <span>Введiть суму</span>
+            </div>
+            <div class="main__select">
+               <select name="currency_selector" data-state="first" class="select--first">
+                  <option class="select__USA" value="USD" selected>USD</option>
+                  <option class="select__EUR" value="EUR">EUR</option>
+                  <option class="select__UAH" value="UAH">UAH</option>
+               </select>
+            </div>
+         </div>
+
+         <div class="main__button">
+            <img src="./img/switch-1.svg" alt="currency-switcher">
+         </div>
+
+         <div class="main__widget">
+            <div class="main__input">
+               <label>Сума конвертацii</label>
+               <input type="number" value="" data-state="second" class="input--second">
+               <span>Введiть суму</span>
+            </div>
+            <div class="main__select">
+               <select name="currency_selector" data-state="second" class="select--second">
+                  <option class="select__USA" value="USD">USD</option>
+                  <option class="select__EUR" value="EUR">EUR</option>
+                  <option class="select__UAH" value="UAH" selected>UAH</option>
+               </select>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="./index.js"></script>
+</body>
+
+</html>
